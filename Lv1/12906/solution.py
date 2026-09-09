@@ -3,8 +3,11 @@
 
 
 def solution(arr):
-    # TODO: 풀이를 작성하고 결과를 return 하세요.
-    pass
+    result = []
+    for i in range(len(arr)):
+        if arr[i] == 0 or arr[i] != arr[i - 1]:
+            result.append(arr[i])
+    return result
 
 
 if __name__ == "__main__":

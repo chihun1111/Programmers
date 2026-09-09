@@ -3,8 +3,7 @@
 
 
 def solution(numbers):
-    # TODO: 풀이를 작성하고 결과를 return 하세요.
-    pass
+    return sum(numbers) / len(numbers)
 
 
 if __name__ == "__main__":

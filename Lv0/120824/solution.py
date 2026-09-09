@@ -3,8 +3,17 @@
 
 
 def solution(num_list):
-    # TODO: 풀이를 작성하고 결과를 return 하세요.
-    pass
+    num = []
+    x = 0
+    y = 0
+    for i in num_list:
+        if i % 2:
+            y += 1
+        else:
+            x += 1
+    num.append(x)
+    num.append(y)
+    return num
 
 
 if __name__ == "__main__":

@@ -3,8 +3,7 @@
 
 
 def solution(num1, num2):
-    # TODO: 풀이를 작성하고 결과를 return 하세요.
-    pass
+    return num1 % num2
 
 
 if __name__ == "__main__":

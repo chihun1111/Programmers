@@ -3,8 +3,7 @@
 
 
 def solution(my_string, letter):
-    # TODO: 풀이를 작성하고 결과를 return 하세요.
-    pass
+    return ''.join(i for i in my_string if i != letter)
 
 
 if __name__ == "__main__":

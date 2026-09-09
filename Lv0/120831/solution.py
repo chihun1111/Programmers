@@ -3,8 +3,7 @@
 
 
 def solution(n):
-    # TODO: 풀이를 작성하고 결과를 return 하세요.
-    pass
+    return sum(i for i in range(n + 1) if i % 2 == 0)
 
 
 if __name__ == "__main__":
