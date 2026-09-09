@@ -3,8 +3,7 @@
 
 
 def solution(num):
-    # TODO: 풀이를 작성하고 결과를 return 하세요.
-    pass
+    return ('Even' if num % 2 == 0 else 'Odd')
 
 
 if __name__ == "__main__":

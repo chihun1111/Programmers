@@ -3,8 +3,18 @@
 
 
 def solution(n):
-    # TODO: 풀이를 작성하고 결과를 return 하세요.
-    pass
+	if n == 1:
+		return 1
+	result = 1 + n
+	i = 2
+	while i * i <= n:
+		if n % i == 0:
+			result += i
+			if i != n // i:
+				result += n // i
+		i += 1
+	return result
+
 
 
 if __name__ == "__main__":

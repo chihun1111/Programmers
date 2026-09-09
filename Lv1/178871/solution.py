@@ -1,7 +1,15 @@
 def solution(signals):
-    
-    answer = 0
-    return answer
+	t = 1
+
+	all_yellow = True
+	while all_yellow:
+		all_yellow = all(
+			signal[t - 1] <= (t - 1) % sum(signal) < signal[t - 1] + signal[t]
+			for signal in signals
+		)
+
+	answer = 0
+	return answer
 
 
 def run_tests():

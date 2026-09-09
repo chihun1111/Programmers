@@ -3,8 +3,11 @@
 
 
 def solution(array, commands):
-    # TODO: 풀이를 작성하고 결과를 return 하세요.
-    pass
+	result = []
+	for command in commands:
+		result.append(
+			sorted(array[command[0] - 1:command[1]])[command[2] - 1])
+	return result
 
 
 if __name__ == "__main__":
