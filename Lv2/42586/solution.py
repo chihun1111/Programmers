@@ -3,8 +3,28 @@
 
 
 def solution(progresses, speeds):
-    pass
-
+    days = []
+    for i, progress in enumerate(progresses):
+        day = 0
+        progress = int(progress)
+        for is_progress in range(progress, 100 , speeds[i]):
+            if is_progress == 100:
+                break
+            else:
+                day += 1
+        days.append(day)
+    count = 0
+    result = []
+    max_day = days[0]
+    for i in days:
+        if max_day >= i:
+            count += 1
+        else:
+            result.append(count)
+            max_day = i
+            count = 1
+    result.append(count)
+    return result
 
 if __name__ == "__main__":
     # 공식 예제 1개를 확인합니다. 미구현 상태에서는 결과가 None입니다.
